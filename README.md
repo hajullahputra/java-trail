@@ -28,10 +28,12 @@ Then open http://127.0.0.1:4173.
 - `dist/styles.css`: responsive styling
 - `dist/curriculum.js`: original lesson content, exercises, tests, and solutions
 - `dist/app.js`: routes, progress storage, interactions, and Java execution harness
+- `dist/theme.css`: futuristic navy, electric blue, and violet theme
+- `dist/interface.js`: quick jump search, focus mode, reading progress, and hover effects
 - `.openai/hosting.json`: private Sites deployment identity and static output configuration
 
 Examples target Java 21; code blocks explain additional imports or setup when required. JDBC, JUnit, filesystem, and networking examples may need a local project or external resources. Official Java, JUnit, and Maven reference links are available inside the app.
 
 ## Validation
 
-All 64 exercise reference test cases were compiled and executed locally using OpenJDK 21. App interaction checks cover every lesson and exercise route, quiz gating, progressive hints, Java harness evaluation, compile errors, network failures, bookmarks, notes, preferences, backup validation, and persistence after reload. Browser visual verification was unavailable in the build environment.
+All 64 exercise reference test cases were compiled and executed locally using OpenJDK 21. App interaction checks cover every lesson and exercise route, quiz gating, progressive hints, Java harness evaluation, compile errors, network failures, bookmarks, notes, preferences, backup validation, and persistence after reload. The updated design was checked in the browser at desktop and phone widths. An additional 13 checks cover quick navigation, keyboard shortcuts, focus mode, preference persistence, and preservation of course progress. Motion effects respect reduced-motion preferences.
