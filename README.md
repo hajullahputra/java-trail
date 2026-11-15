@@ -2,6 +2,14 @@
 
 A self-paced Java learning app with 36 lessons across 12 modules and 18 scenario-based coding exercises.
 
+## GitHub hosting
+
+The app is prepared for GitHub Pages in `hajullahputra/java-trail`. The workflow in `.github/workflows/pages.yml` deploys `dist/` when app files change on `main`, and can also be started manually from GitHub Actions. No build dependencies or server are needed.
+
+The project address will be `https://hajullahputra.github.io/java-trail/` once GitHub Pages is enabled and its first deployment succeeds. Scripts, styles, and navigation use relative paths so they work under that project address.
+
+Progress belongs to the web address where you used the app. To move progress from the previous address, open Settings there, choose **Download backup**, then open Settings at the new GitHub Pages address and choose **Import backup**. This transfers lesson completions, solved scenarios, notes, drafts, and activity history. Keep the backup until you confirm everything is present.
+
 ## Use the app
 
 The overview links to a learning path, coding practice, progress dashboard, saved lessons, resources, and settings. Lesson completion requires a correct knowledge check and an explicit completion action. Exercise completion requires passing all supplied example cases with real Java output.
@@ -30,7 +38,8 @@ Then open http://127.0.0.1:4173.
 - `dist/app.js`: routes, progress storage, interactions, and Java execution harness
 - `dist/theme.css`: futuristic navy, electric blue, and violet theme
 - `dist/interface.js`: quick jump search, focus mode, reading progress, and hover effects
-- `.openai/hosting.json`: private Sites deployment identity and static output configuration
+- `.github/workflows/pages.yml`: automatic GitHub Pages deployment
+- `.openai/hosting.json`: retained identity for the previous private Sites publication
 
 Examples target Java 21; code blocks explain additional imports or setup when required. JDBC, JUnit, filesystem, and networking examples may need a local project or external resources. Official Java, JUnit, and Maven reference links are available inside the app.
 
